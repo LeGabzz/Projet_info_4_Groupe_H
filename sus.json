@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "title": "Sushis",
+      "image": "../images/sushi.jpg",
+      "type": "Cuisine Japonaise",
+      "price": "Plus de 20$",
+      "nutrition": "Très équilibré",
+      "description": "Les Sushis sont un plat japonais populaire, composé de riz vinaigré, de poisson cru et de légumes.",
+      "preparationTime": "20 min",
+      "cookingTime": "15 min",
+      "serving": "4 personnes",
+      "ingredients": "- 0.5 cuillère à café de sel<br />\n- 1 cuillère à soupe de vinaigre de riz<br />\n- 1 cuillère à soupe de sucre en poudre<br />\n- Sésame<br />\n- 0.5 avocat<br />\n- 0.25 concombre<br />\n- 1 boîte de crabe ou 8 bâtonnets de surimi ou 150 g de saumon cru ou fumé<br />\n- 2 feuilles de nori (algues) coupées en 2 (donc 4)<br />\n- 125 g de riz rond<br />\n- Wasabi<br />\n- Sauce soja",
+      "utensils": "- 1 casserole<br />\n- 1 couteau<br />\n- 1 balance de cuisine<br />\n- 1 natte de bambou",
+      "instructions": "1. Rincer le riz à l'eau froide jusqu'à ce que l'eau qui s'écoule soit claire. Laisser égoutter.<br />\n2. Faire cuire le riz dans 15 cl d'eau : porter à ébullition 2 minutes et laisser gonfler 10 minutes à petit feu couvert. Laisser refroidir.<br />\n3. Faire bouillir le vinaigre de riz avec le sucre et le sel. Laisser refroidir. Incorporer l'assaisonnement au riz.<br />\n4. Émincer en fines et longues lamelles le concombre et l'avocat.<br />\n5. Étaler 1 cm de riz sur chacune des feuilles de nori.<br />\n6. Saupoudrer de graines de sésame.<br />\n7. Retourner la feuille de nori (pour que le riz se retrouve à l'extérieur du rouleau) et étaler un peu wasabi.<br />\n8. Garnir avec le concombre, l'avocat et le crabe, puis rouler pour former le rouleau (plus facile si vous possédez un makisu : natte de bambou à rouler).<br />\n9. Couper chaque rouleau en 8.",
+      "prompt": "Donne moi une recette contenant ces ingrédients : riz vinaigré, poisson cru, légumes De préférence une recette de type Japonaise La préparation peut être rapide La recette doit être de qualité nutritionelle Très équilibré Le prix peut être plus élevé Réponds avec le format suivant: \nTitre: <titre de la recette>\nImage: <URL de l'image>\nType: <origine du plat>\nPrix: <fourchette de prix>\nNutrition: <information nutritionnelle>\nDescription: <description rapide du plat>\nTemps de préparation: <temps de préparation>\nTemps de cuisson: <temps de cuisson>\nPour: <pour combien de personnes>\nIngrédients: <liste des ingrédients>\nUstensils: <liste des ustensils>\nInstructions: <instructions détaillées>Sois très précis dans les étapes de préparation et n'hésite pas à donner des astuces."
+    }
+  ]
+}

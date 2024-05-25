@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "title": "Salade César",
+      "image": "../images/salade-cesar.jpg",
+      "type": "Cuisine du monde",
+      "price": "Moins de 5$",
+      "nutrition": "Très équilibré",
+      "description": "La Salade César est un classique des salades, connue pour sa sauce crémeuse et ses croûtons croustillants.",
+      "preparationTime": "15 min",
+      "cookingTime": "5 min",
+      "serving": "4 personnes",
+      "ingredients": "- 2 cuillères à soupe d'huile<br />\n- 2 cœurs de laitue effeuillé<br />\n- 25 g de Parmesan (copeaux)<br />\n- 4 tranches de pain écroustées<br />\nPour la sauce :<br />\n- Sel<br />\n- Poivre<br />\n- 15 cl d'huile<br />\n- 1 trait de tabasco<br />\n- 0.5 cuillère à café de moutarde<br />\n- 1 œuf<br />\n- 25 g de parmesan râpé<br />\n- 2 cuillères à café de câpres<br />\n- Citron<br />\n- 1 gousse d'ail pelée",
+      "utensils": "- 1 pinceau<br />\n- 1 saladier<br />\n- 1 mixeur<br />\n- 1 bol",
+      "instructions": "1. Faites dorer le pain, coupé en cubes, 3 min dans un peu d'huile.<br />\n2. Déchirez les feuilles de romaine dans un saladier, et ajoutez les croûtons préalablement épongés dans du papier absorbant.<br />\n3. Préparez la sauce : Faites cuire l'œuf 1 min 30 dans l'eau bouillante, et rafraîchissez-le.<br />\n4. Cassez-le dans le bol d'un mixeur et mixez, avec tous les autres ingrédients; rectifiez l'assaisonnement et incorporez à la salade.<br />\n5. Décorez de copeaux de parmesan, et servez.",
+      "prompt": "Donne moi une recette contenant ces ingrédients : laitue, pain, parmesan, œuf, huile, câpres De préférence une recette de type Cuisine du monde La préparation peut être rapide La recette doit être très équilibrée Le prix doit être moins de 5$ Réponds avec le format suivant: \nTitre: <titre de la recette>\nImage: <URL de l'image>\nType: <origine du plat>\nPrix: <fourchette de prix>\nNutrition: <information nutritionnelle>\nDescription: <description rapide du plat>\nTemps de préparation: <temps de préparation>\nTemps de cuisson: <temps de cuisson>\nPour: <pour combien de personnes>\nIngrédients: <liste des ingrédients>\nUstensils: <liste des ustensils>\nInstructions: <instructions détaillées>Sois très précis dans les étapes de préparation et n'hésite pas à donner des astuces."
+    }
+  ]
+}

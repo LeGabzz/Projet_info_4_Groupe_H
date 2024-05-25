@@ -1,0 +1,9 @@
+.slogan {
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 20px 0;
+    color: #afaf8e;
+}
+/*Pour centrer essayer de voir avec le "div" du logo(ptete qu'il crée un margin trop grand autour...) ducoup il décale mon slogan tt a droite */

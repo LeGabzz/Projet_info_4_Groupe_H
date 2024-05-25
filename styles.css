@@ -1,0 +1,193 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Styles du logo */
+.logo {
+  width: 125px;
+  height: 115px;
+  background-image: url(IMG_0190.jpg);
+  background-size: cover;
+  background-position: center;
+  left: 20px;
+}
+
+.loading-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box {
+  background-color: #fafafa; /* Light gray background */
+  border: 3px solid #afaf8e; /* Border with the new color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  margin: 20px auto; /* Space outside the box, centered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Arial', sans-serif; /* More readable font */
+  text-align: center; /* Centered text */
+  font-size: 1.1em; /* Slightly larger text */
+  max-width: 600px; /* Max width to make it more square-like */
+  width: 80%; /* Responsive width */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+.welcome-box p {
+  margin: 0; /* Remove default margin */
+}
+
+
+/* Styles de l'en-tête */
+header {
+  background-color: white;
+  padding: 10px 20px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+nav button {
+  padding: 15px 25px;
+  margin-left: 10px;
+  margin-right: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #555;
+}
+
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.bar {
+  width: 15px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.3s;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.menu-title {
+  position: center;
+  top: 0;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.menu.active {
+  display: block;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.scrolling-wrapper {
+  display: inline-block;
+}
+
+.item {
+  display: inline-block;
+  width: 150px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.button, .inscription {
+  margin-left: 20px;
+  font-style: italic;
+  color: grey;
+}
+
+.item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Styles pour le footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
