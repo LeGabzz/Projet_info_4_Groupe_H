@@ -1,0 +1,95 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 70px;
+}
+
+/* Styles pour le conteneur de contact */
+.contact-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Styles pour le logo */
+.logo {
+    width: 125px;
+    height: 110px;
+    background-image: url(IMG_0190.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+/* Styles de l'en-tête */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.contact-container h1, .contact-container h2 {
+    color: #333;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-container ul li {
+    margin: 10px 0;
+}
+
+.contact-container ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-container ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le bouton de retour */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+}
