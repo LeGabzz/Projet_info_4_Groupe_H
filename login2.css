@@ -1,0 +1,55 @@
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+main {
+  padding-top: 150px; /* Adjust based on the height of your header */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button[type="submit"],
+button#register-button {
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Add margin to separate buttons */
+}
+
+button[type="submit"]:hover,
+button#register-button:hover {
+  background-color: black;
+}

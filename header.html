@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La Cuisine du Chef</title>
+    <link rel="stylesheet" href="bande.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<?php
+session_start();
+?>
+
+<header>
+    <a href="/">
+    <div class="logo"></div>
+    </a>
+    <h1 class="slogan">Mangez maison, mangez bon</h1>
+    <script src="menu.js"></script>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div id="menu" class="menu">
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true): ?>
+            <a href="favoris.html" class="menu-item">Favoris</a>
+            <a href="para.html" class="menu-item">Paramètres</a>
+            <a href="hist.html" class="menu-item">Historique</a>
+            <a href="logout.php" class="menu-item">Se deconnecter</a>
+        <?php else: ?>
+            <a href="logt.php" class="menu-item">Connexion</a>
+            <a href="regt2.php" class="menu-item">Inscription</a>
+        <?php endif; ?>
+    </div>
+</header>
+
+</body>
+</html>
