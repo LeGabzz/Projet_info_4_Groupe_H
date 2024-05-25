@@ -1,0 +1,33 @@
+.slideshow {
+  width: 100%; /* Largeur du conteneur parent */
+  height: 250px; /* Hauteur fixe */
+  overflow: hidden; /* Cache les parties du conteneur intérieur qui débordent */
+  position: relative;
+  display: flex;
+  margin-top:96px;
+
+}
+
+.slideshow-inner {
+  display: flex; /* Flexbox pour l'alignement des images */
+  flex-wrap: nowrap; /* Empêche les images de passer à la ligne suivante */
+  position: relative; /* Important pour le déplacement */
+  will-change: transform;
+  animation: slide 40s linear infinite; /* Animation douce du défilement */
+}
+
+.slideshow-inner img {
+  width: auto; /* Garde le rapport d'aspect de l'image */
+  height: 100%; /* Ajuste la hauteur des images pour qu'elles remplissent le carrousel */
+  flex-shrink: 0;
+  object-fit: cover; /* S'assure que l'image garde ses proportions et remplisse le conteneur sans déborder */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

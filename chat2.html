@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Plats</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recherche de Plats</h1>
+        <form class="search-form" method="post" action="gptform5.php" onsubmit="notifyParent();">
+            <div class="search-bar">
+                <input type="text" name="ing" id="search-bar" placeholder="Rechercher un aliment...">
+            </div>
+            <div class="search-form">
+                <label for="cuisine">Type de cuisine :</label>
+                <select id="cuisine" name="cuisine">
+                    <option value="">Sélectionnez une cuisine</option>
+                    <option value="Italienne">Italienne</option>
+                    <option value="Française">Française</option>
+                    <option value="Asiatique">Asiatique</option>
+                    <option value="Méditerranée">Méditerranée</option>
+                    <option value="Espagnol">Espagnol</option>
+                    <option value="Libanais">Libanais</option>
+                    <option value="Oriental">Oriental</option>
+                    <option value="Japonais">Japonais</option>
+                    <option value="Indien">Indien</option>
+                    <option value="Thaïlandais">Thaïlandais</option>
+                    <option value="Coréen">Coréen</option>
+                    <option value="Chinois">Chinois</option>
+                    <option value="Cuisine du monde">Cuisine du monde</option>
+                    <option value="Africain">Africain</option>
+                    <option value="Latino">Latino</option>
+                    <option value="Marocain">Marocain</option>
+                </select><br>
+
+                <label for="price">Prix maximum :</label>
+                <select id="price" name="price">
+                    <option value="">Sélectionnez un prix</option>
+                    <option value="5">Moins de 5$</option>
+                    <option value="10">Entre 5$ et 10$</option>
+                    <option value="20">Entre 10$ et 20$</option>
+                    <option value="21">Plus de 20$</option>
+                </select><br>
+
+                <label for="time">Temps de préparation :</label>
+                <select id="time" name="time">
+                    <option value="">Sélectionnez un temps</option>
+                    <option value="10">Moins de 10 min</option>
+                    <option value="20">Entre 10 min et 20 min</option>
+                    <option value="30">Entre 20 min et 30 min</option>
+                    <option value="31">Plus de 30 min</option>
+                </select><br>
+
+                <label for="nutritional_balance">Équilibre nutritionnel :</label>
+                <select id="nutritional_balance" name="nutr">
+                    <option value="">Sélectionnez un type</option>
+                    <option value="Très équilibré">Très équilibré</option>
+                    <option value="Équilibré">Équilibré</option>
+                    <option value="Modéré">Modéré</option>
+                    <option value="Peu équilibré">Peu équilibré</option>
+                    <option value="Non équilibré">Non équilibré</option>
+                </select><br>
+
+                <button type="submit">Rechercher</button>
+            </div>
+        </form>
+        <div class="results" id="results">
+            <!-- Les résultats de la recherche s'afficheront ici -->
+        </div>
+    </div>
+    <script>
+        function notifyParent() {
+            // Send a message to the parent window
+            parent.postMessage('showAlert', '*');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}*/
+
+
+.logo {
+  width: 125px;
+  height: 110px;
+  background-image: url(IMG_0190.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 20px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure elements are spaced evenly */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: 'Pinyon Script', cursive;
+  color: #afaf8e;
+  font-size: 80px;
+  text-align: center;
+  margin: 0 auto; /* Center the h1 within the header */
+  flex-grow: 1; /* Allow the h1 to take available space */
+}
+
+.slogan {
+  font-family: 'Pinyon Script', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  margin: 20px 0;
+  color: #afaf8e;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+/*body {
+  padding-top: 150px; /* Adjust based on the height of your header */
+}*/
