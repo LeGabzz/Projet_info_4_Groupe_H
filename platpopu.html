@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plats les plus populaires</title>
+    <link rel="stylesheet" href="platpopu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plats les plus populaires</h1>
+        <div id="popular-dishes" class="scrolling-wrapper">
+            <!-- Les plats populaires seront affichés ici -->
+        </div>
+    </div>
+
+    <script>
+        // Données fictives des plats populaires avec des chemins d'images locaux et catégories d'équilibre nutritionnel
+        const popularDishes = [
+            {
+                id: 1,
+                name: 'Pizza Margherita',
+                cuisine: 'Italienne',
+                priceRange: 'Entre 10$ et 20$',
+                nutritionalBalance: 'Non équilibré',
+                imageUrl: 'margherita.jpg',
+                pageUrl: 'margherita.html' // Page URL pour ce plat
+            },
+            {
+                id: 2,
+                name: 'Sushi',
+                cuisine: 'Japonaise',
+                priceRange: 'Plus de 20$',
+                nutritionalBalance: 'Très équilibré',
+                imageUrl: 'sushi.jpg',
+                pageUrl: 'sushi.html' // Page URL pour ce plat
+            },
+            {
+                id: 3,
+                name: 'Ratatouille',
+                cuisine: 'Française',
+                priceRange: 'Entre 5$ et 10$',
+                nutritionalBalance: 'Équilibré',
+                imageUrl: 'ratatouille.jpg',
+                pageUrl: 'ratatouille.html' // Page URL pour ce plat
+            },
+            {
+                id: 4,
+                name: 'Tacos',
+                cuisine: 'Latino',
+                priceRange: 'Moins de 5$',
+                nutritionalBalance: 'Peu équilibré',
+                imageUrl: 'tacos.jpg',
+                pageUrl: 'tacos.html' // Page URL pour ce plat
+            },
+            {
+                id: 5,
+                name: 'Salade César',
+                cuisine: 'Cuisine du monde',
+                priceRange: 'Moins de 5$',
+                nutritionalBalance: 'Très équilibré',
+                imageUrl: 'salade-cesar.jpg',
+                pageUrl: 'salade_cesar.html' // Page URL pour ce plat
+            }
+        ];
+
+        // Fonction pour afficher les plats populaires
+        function displayPopularDishes() {
+            const container = document.getElementById('popular-dishes');
+            popularDishes.forEach(dish => {
+                const dishElement = document.createElement('div');
+                dishElement.className = 'dish';
+                dishElement.innerHTML = `
+                    <img src="${dish.imageUrl}" alt="${dish.name}">
+                    <a href="${dish.pageUrl}" class="dish-title">${dish.name}</a>
+                    <p>Type de cuisine : ${dish.cuisine}</p>
+                    <p>Tranche de prix : ${dish.priceRange}</p>
+                    <p>Équilibre nutritionnel : ${dish.nutritionalBalance}</p>
+                    <button class="favorite-button" onclick="addToFavorites(${dish.id})">Mettre en favoris</button>
+                `;
+                container.appendChild(dishElement);
+            });
+        }
+
+        // Fonction pour ajouter un plat aux favoris
+        function addToFavorites(dishId) {
+            fetch('addToFavorites.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: dishId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Plat ajouté aux favoris !');
+                } else {
+                    alert('Erreur lors de l\'ajout aux favoris.');
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+            });
+        }
+
+        // Appeler la fonction pour afficher les plats populaires lors du chargement de la page
+        document.addEventListener('DOMContentLoaded', displayPopularDishes);
+    </script>
+</body>
+</html>

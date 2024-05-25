@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "title": "Ratatouille",
+      "image": "../images/ratatouille.jpg",
+      "type": "Cuisine Française",
+      "price": "Entre 5$ et 10$",
+      "nutrition": "Équilibré",
+      "description": "La ratatouille est un plat traditionnel provençal composé de légumes mijotés.",
+      "preparationTime": "25 min",
+      "cookingTime": "55 min",
+      "serving": "4 personnes",
+      "ingredients": "- Sel<br />\n- Poivre<br />\n- 1 feuille de laurier<br />\n- 1 brin de thym<br />\n- 6 cuillères à soupe d'huile d'olive<br />\n- 500 g de tomates bien mûres<br />\n- 350 g d'oignon<br />\n- 350 g de poivron de couleur rouge et vert<br />\n- 350 g de courgette<br />\n- 350 g d'aubergine<br />\n- 3 gousses d'ail",
+      "utensils": "- 1 saladier<br />\n- 1 planche à découper<br />\n- 1 couteau<br />\n- 1 sauteuse<br />\n- 1 dénoyauteur",
+      "instructions": "1. Coupez les tomates pelées en quartiers, les aubergines et les courgettes en rondelles.<br />\n2. Émincez les poivrons en lamelles et l'oignon en rouelles.<br />\n3. Chauffez 2 cuillères à soupe d'huile dans une poêle et faites-y fondre les oignons et les poivrons.<br />\n4. Lorsqu'ils sont tendres, ajoutez les tomates, l'ail haché, le thym et le laurier.<br />\n5. Salez, poivrez et laissez mijoter doucement à couvert durant 45 minutes.<br />\n6. Pendant ce temps, préparez les aubergines et les courgettes. Faites-les cuire séparément ou non dans l'huile d'olive pendant 15 minutes.<br />\n7. Vérifiez la cuisson des légumes pour qu'ils ne soient plus fermes. Ajoutez-les alors au mélange de tomates et prolongez la cuisson sur tout petit feu pendant 10 min.<br />\n8. Salez et poivrez si besoin.",
+      "prompt": "Donne moi une recette contenant ces ingrédients : tomates, oignon, poivron, courgette, aubergine, ail De préférence une recette de type Française La préparation peut être longue La recette doit être de qualité nutritionelle Équilibré Le prix peut être entre 5$ et 10$ Réponds avec le format suivant: \nTitre: <titre de la recette>\nImage: <URL de l'image>\nType: <origine du plat>\nPrix: <fourchette de prix>\nNutrition: <information nutritionnelle>\nDescription: <description rapide du plat>\nTemps de préparation: <temps de préparation>\nTemps de cuisson: <temps de cuisson>\nPour: <pour combien de personnes>\nIngrédients: <liste des ingrédients>\nUstensils: <liste des ustensils>\nInstructions: <instructions détaillées>Sois très précis dans les étapes de préparation et n'hésite pas à donner des astuces."
+    }
+  ]
+}
