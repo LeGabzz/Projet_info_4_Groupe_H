@@ -117,7 +117,7 @@
                 if (data.error) {
                     console.error(data.error);
                 } else {
-                    alert('Recipe added to favorites!');
+                    alert('Recette aujoutée au favoris !');
                 }
             })
             .catch(error => {
@@ -132,7 +132,7 @@
 
         // Event listener for the Next Recipe button
         document.getElementById('other-recipe').addEventListener('click', () => {
-             window.location.href = '../gptform.html';
+             window.location.href = '../';
         });
 
         // Call the function to fetch data when the page loads
